@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorBlack</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/colorWindowBackground</item>
+        <item name="android:colorBackground">@color/colorWindowBackground</item>
+    </style>
+
+    <!-- Message Text Appearance. -->
+    <style name="MessageTextAppearance">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/general_text_size_20</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <!-- Main Title Text Appearance. -->
+    <style name="MainTitleTextAppearance">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/general_text_size_22</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+    </style>
+
+    <!-- Title Text Appearance. -->
+    <style name="TitleTextAppearance">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/general_text_size_17</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+    </style>
+
+    <!-- Value Text Appearance. -->
+    <style name="ValueTextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/general_text_size_17</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Button Text Appearance. -->
+    <style name="ButtonTextAppearance">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/general_text_size_17</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+    </style>
+
+</resources>

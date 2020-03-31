@@ -1,0 +1,152 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="cardDetailsViewModel"
+            type="com.example.triggerisechallenge.viewModels.CardDetailViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/general_margin_15"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/MainTitleTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_margin_15"
+                    android:text="@string/card_information" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/general_margin_50"
+                    android:contentDescription="@string/card_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_no_card"
+                    app:cardImage="@{cardDetailsViewModel.cardImage}"
+                    />
+
+                <TextView
+                    style="@style/TitleTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_margin_30"
+                    android:text="@string/name" />
+
+                <TextView
+                    style="@style/ValueTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_margin_15"
+                    android:text="@{cardDetailsViewModel.cardName}" />
+
+                <TextView
+                    style="@style/TitleTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_margin_30"
+                    android:text="@string/type" />
+
+                <TextView
+                    style="@style/ValueTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_margin_15"
+                    android:text="@{cardDetailsViewModel.cardType}" />
+
+                <TextView
+                    style="@style/TitleTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_margin_30"
+                    android:text="@string/rarity" />
+
+                <TextView
+                    style="@style/ValueTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_margin_15"
+                    android:text="@{cardDetailsViewModel.cardRarity}" />
+
+                <TextView
+                    style="@style/TitleTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_margin_30"
+                    android:text="@string/description" />
+
+                <TextView
+                    style="@style/ValueTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_margin_15"
+                    android:text="@{cardDetailsViewModel.cardText}" />
+
+                <TextView
+                    style="@style/TitleTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_margin_30"
+                    android:text="@string/artist" />
+
+                <TextView
+                    style="@style/ValueTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_margin_15"
+                    android:text="@{cardDetailsViewModel.cardArtist}" />
+
+                <TextView
+                    style="@style/TitleTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_margin_30"
+                    android:text="@string/number" />
+
+                <TextView
+                    style="@style/ValueTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_margin_15"
+                    android:text="@{cardDetailsViewModel.cardNumber}" />
+
+                <TextView
+                    style="@style/TitleTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_margin_30"
+                    android:text="@string/colors" />
+
+                <TextView
+                    style="@style/ValueTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_margin_15"
+                    android:text="@{cardDetailsViewModel.cardColors}" />
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

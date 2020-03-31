@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Magic: The Gathering</string>
+    <string name="list_of_sets">List of Sets:</string>
+    <string name="list_of_cards">List of Cards:</string>
+    <string name="error">Error on loading data !</string>
+    <string name="name">Name:</string>
+    <string name="type">Type:</string>
+    <string name="cards">Cards</string>
+    <string name="booster">Booster</string>
+    <string name="card_information">Card Information</string>
+    <string name="card_image">CARD IMAGE</string>
+    <string name="rarity">Rarity:</string>
+    <string name="description">Description:</string>
+    <string name="artist">Artist:</string>
+    <string name="number">Number:</string>
+    <string name="colors">Colors:</string>
+</resources>
